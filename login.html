@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Mengatur posisi konten secara horizontal di tengah */
+            align-items: center; /* Mengatur posisi konten secara vertikal di tengah */
+            height: 100vh; /* Mengatur tinggi body agar memenuhi viewport */
+            margin: 0; /* Menghilangkan margin default */
+            background-color: #f0f0f0; /* Warna latar belakang */
+            font-family: Arial, sans-serif; /* Mengatur font */
+        }
+        .container {
+            background-color: #ffffff; /* Warna latar belakang untuk kontainer */
+            padding: 20px; /* Memberikan ruang di dalam kontainer */
+            border-radius: 10px; /* Membuat sudut kontainer melengkung */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+            width: 300px; /* Mengatur lebar kontainer */
+            text-align: center; /* Mengatur teks di dalam kontainer agar berada di tengah */
+        }
+        h1 {
+            font-size: 24px; /* Ukuran font judul */
+            margin-bottom: 20px; /* Jarak bawah judul */
+        }
+        input {
+            display: block; /* Mengatur input menjadi block agar lebar penuh */
+            width: 100%; /* Mengatur lebar input menjadi 100% dari kontainer */
+            margin: 10px 0; /* Memberikan jarak antar input */
+            padding: 10px; /* Memberikan ruang di dalam input */
+            border: 1px solid #ccc; /* Menambahkan border pada input */
+            border-radius: 5px; /* Membuat sudut input melengkung */
+            box-sizing: border-box; /* Memastikan padding dan border termasuk dalam lebar total */
+        }
+        button {
+            width: 100%; /* Mengatur lebar tombol menjadi 100% dari kontainer */
+            padding: 10px; /* Memberikan ruang di dalam tombol */
+            border: none; /* Menghilangkan border default */
+            border-radius: 5px; /* Membuat sudut tombol melengkung */
+            background-color: #4CAF50; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            font-size: large; /* Ukuran font tombol */
+            cursor: pointer; /* Mengubah kursor saat hover */
+        }
+        button:hover {
+            background-color: #45a049; /* Warna latar belakang tombol saat hover */
+        }
+        .checkbox-label {
+            display: flex; /* Mengatur label checkbox agar berada di samping */
+            align-items: center; /* Mengatur posisi vertikal label checkbox */
+            justify-content: center; /* Mengatur posisi horizontal label checkbox */
+            margin: 10px 0; /* Jarak atas dan bawah */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <div class="checkbox-label">
+            <input type="checkbox" id="remember"> 
+            <label for="remember">Ingat saya</label>
+        </div>
+        <button onclick="login()">Masuk</button>
+    </div>
+
+    <script>
+        function login() {
+            // Mendapatkan nilai dari input
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Username dan password yang valid
+            const validUsername = "Ntanael-cyber";
+            const validPassword = "Ntanael19-";
+
+            // Memeriksa apakah username dan password sesuai
+            if (username === validUsername && password === validPassword) {
+                alert("Login berhasil!"); // Tindakan saat login berhasil
+                window.location.href = "index.html"; // Arahkan ke halaman index.html
+            } else {
+                alert("Username atau password salah!"); // Tindakan saat login gagal
+            }
+        }
+    </script>

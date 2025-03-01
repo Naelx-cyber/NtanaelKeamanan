@@ -1,0 +1,51 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray; /* Warna latar belakang */
+}
+
+.container {
+    max-width: 800px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Memusatkan kontainer */
+    padding: 20px; /* Ruang di dalam kontainer */
+    background-color: #ffffff; /* Warna latar belakang kontainer */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+nav {
+    margin-bottom: 20px; /* Jarak bawah navigasi */
+}
+
+nav ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding */
+}
+
+nav ul li {
+    display: inline; /* Menampilkan item navigasi secara horizontal */
+    margin-right: 20px; /* Jarak antar item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #333; /* Warna teks tautan */
+    font-weight: bold; /* Menebalkan teks */
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Warna teks saat hover */
+}
+
+h1 {
+    color: #333; /* Warna teks judul */
+    text-align: center; /* Memusatkan teks judul */
+}
+
+p {
+    text-align: center; /* Memusatkan teks paragraf */
+    color: #666; /* Warna teks paragraf */
+}
